@@ -21,6 +21,8 @@ installPlugins({
 	"nvim-lualine/lualine.nvim",
 	"windwp/nvim-autopairs",
 	"lewis6991/gitsigns.nvim",
+	"folke/noice.nvim",
+	"MunifTanjim/nui.nvim",
 })
 
 require("plugins.catppuccin")
@@ -30,3 +32,4 @@ require("plugins.mini-pick")
 require("plugins.lualine")
 require("plugins.autopairs")
 require("plugins.gitsigns")
+require("plugins.noice")
