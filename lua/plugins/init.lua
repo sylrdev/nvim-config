@@ -16,7 +16,9 @@ installPlugins({
 	"stevearc/oil.nvim",
 	"nvim-mini/mini.icons",
 	"nvim-tree/nvim-web-devicons",
+	"vyfor/cord.nvim",
 })
 
 require("plugins.catppuccin")
 require("plugins.oil")
+require("plugins.cord")
