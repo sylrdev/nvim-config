@@ -17,8 +17,10 @@ installPlugins({
 	"nvim-mini/mini.icons",
 	"nvim-tree/nvim-web-devicons",
 	"vyfor/cord.nvim",
+	"nvim-mini/mini.pick",
 })
 
 require("plugins.catppuccin")
 require("plugins.oil")
 require("plugins.cord")
+require("plugins.mini-pick")
