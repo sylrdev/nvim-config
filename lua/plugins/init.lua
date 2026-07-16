@@ -20,6 +20,7 @@ installPlugins({
 	"nvim-mini/mini.pick",
 	"nvim-lualine/lualine.nvim",
 	"windwp/nvim-autopairs",
+	"lewis6991/gitsigns.nvim",
 })
 
 require("plugins.catppuccin")
@@ -28,3 +29,4 @@ require("plugins.cord")
 require("plugins.mini-pick")
 require("plugins.lualine")
 require("plugins.autopairs")
+require("plugins.gitsigns")

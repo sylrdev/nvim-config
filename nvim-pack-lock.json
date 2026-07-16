@@ -4,6 +4,10 @@
       "rev": "a4b9d7b3961bdddec583df5e37de4b5d6a606d0a",
       "src": "https://github.com/vyfor/cord.nvim"
     },
+    "gitsigns.nvim": {
+      "rev": "31d6fb2d618bca1482b9f274751ead5f03461408",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
     "lualine.nvim": {
       "rev": "221ce6b2d999187044529f49da6554a92f740a96",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
