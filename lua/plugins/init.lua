@@ -18,9 +18,11 @@ installPlugins({
 	"nvim-tree/nvim-web-devicons",
 	"vyfor/cord.nvim",
 	"nvim-mini/mini.pick",
+	"nvim-lualine/lualine.nvim",
 })
 
 require("plugins.catppuccin")
 require("plugins.oil")
 require("plugins.cord")
 require("plugins.mini-pick")
+require("plugins.lualine")
