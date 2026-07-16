@@ -19,6 +19,7 @@ installPlugins({
 	"vyfor/cord.nvim",
 	"nvim-mini/mini.pick",
 	"nvim-lualine/lualine.nvim",
+	"windwp/nvim-autopairs",
 })
 
 require("plugins.catppuccin")
@@ -26,3 +27,4 @@ require("plugins.oil")
 require("plugins.cord")
 require("plugins.mini-pick")
 require("plugins.lualine")
+require("plugins.autopairs")
