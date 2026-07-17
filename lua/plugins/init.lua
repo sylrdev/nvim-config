@@ -11,7 +11,7 @@ local function installPlugins(list)
 	vim.pack.add(plugins)
 end
 
-installPlugins({
+installPlugins {
 	"catppuccin/nvim",
 	"stevearc/oil.nvim",
 	"nvim-mini/mini.icons",
@@ -25,7 +25,8 @@ installPlugins({
 	"MunifTanjim/nui.nvim",
 	"WhoIsSethDaniel/mason-tool-installer.nvim",
 	"mason-org/mason.nvim",
-})
+	"stevearc/conform.nvim",
+}
 
 require("plugins.catppuccin")
 require("plugins.oil")
@@ -36,3 +37,4 @@ require("plugins.autopairs")
 require("plugins.gitsigns")
 require("plugins.noice")
 require("plugins.mason-tool-installer")
+require("plugins.conform")
