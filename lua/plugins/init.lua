@@ -26,6 +26,9 @@ installPlugins {
 	"WhoIsSethDaniel/mason-tool-installer.nvim",
 	"mason-org/mason.nvim",
 	"stevearc/conform.nvim",
+	"saghen/blink.cmp",
+	"saghen/blink.lib",
+	"folke/lazydev.nvim",
 }
 
 require("plugins.catppuccin")
@@ -35,6 +38,7 @@ require("plugins.mini-pick")
 require("plugins.lualine")
 require("plugins.autopairs")
 require("plugins.gitsigns")
-require("plugins.noice")
+--require("plugins.noice")
 require("plugins.mason-tool-installer")
 require("plugins.conform")
+require("plugins.blink-cmp")
