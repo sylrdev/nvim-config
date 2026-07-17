@@ -29,6 +29,8 @@ installPlugins {
 	"saghen/blink.cmp",
 	"saghen/blink.lib",
 	"folke/lazydev.nvim",
+	"neovim/nvim-lspconfig",
+	"lopi-py/luau-lsp.nvim",
 }
 
 require("plugins.catppuccin")
@@ -38,7 +40,7 @@ require("plugins.mini-pick")
 require("plugins.lualine")
 require("plugins.autopairs")
 require("plugins.gitsigns")
---require("plugins.noice")
+require("plugins.noice")
 require("plugins.mason-tool-installer")
 require("plugins.conform")
 require("plugins.blink-cmp")
