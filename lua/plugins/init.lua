@@ -31,6 +31,7 @@ installPlugins {
 	"folke/lazydev.nvim",
 	"neovim/nvim-lspconfig",
 	"lopi-py/luau-lsp.nvim",
+	"b0o/SchemaStore.nvim",
 	"mfussenegger/nvim-lint",
 }
 
