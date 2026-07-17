@@ -23,6 +23,8 @@ installPlugins({
 	"lewis6991/gitsigns.nvim",
 	"folke/noice.nvim",
 	"MunifTanjim/nui.nvim",
+	"WhoIsSethDaniel/mason-tool-installer.nvim",
+	"mason-org/mason.nvim",
 })
 
 require("plugins.catppuccin")
@@ -33,3 +35,4 @@ require("plugins.lualine")
 require("plugins.autopairs")
 require("plugins.gitsigns")
 require("plugins.noice")
+require("plugins.mason-tool-installer")
