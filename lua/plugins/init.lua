@@ -31,6 +31,7 @@ installPlugins {
 	"folke/lazydev.nvim",
 	"neovim/nvim-lspconfig",
 	"lopi-py/luau-lsp.nvim",
+	"mfussenegger/nvim-lint",
 }
 
 require("plugins.catppuccin")
@@ -44,3 +45,4 @@ require("plugins.noice")
 require("plugins.mason-tool-installer")
 require("plugins.conform")
 require("plugins.blink-cmp")
+require("plugins.lint")

@@ -10,6 +10,7 @@ require("mason-tool-installer").setup {
 
 		-- formatters
 		"stylua",
+		"prettierd",
 
 		-- linters
 		"selene",

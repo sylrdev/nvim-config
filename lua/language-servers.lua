@@ -92,4 +92,5 @@ require("luau-lsp").setup {
 vim.lsp.enable {
 	"lua_ls",
 	"jsonls",
+	"taplo",
 }
