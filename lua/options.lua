@@ -16,5 +16,7 @@ vim.diagnostic.config {
 	float = {
 		border = "rounded",
 	},
-	virtual_text = true,
+	virtual_lines = {
+		current_line = true,
+	},
 }
