@@ -59,7 +59,7 @@ vim.lsp.config("luau-lsp", {
 				showDeprecatedItems = false,
 			},
 			fflags = {
-				enableNewSolver = false,
+				enableNewSolver = true,
 			},
 			hover = {
 				multilineFunctionDefinitions = true,
@@ -83,7 +83,7 @@ require("luau-lsp").setup {
 		roblox_security_level = "PluginSecurity",
 	},
 	fflags = {
-		enable_new_solver = false,
+		enable_new_solver = true,
 	},
 	plugin = {
 		enabled = true,
