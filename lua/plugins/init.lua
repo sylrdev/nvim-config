@@ -1,3 +1,7 @@
+local function isNixos()
+	return vim.fn.filereadable("/etc/NIXOS") == 1 and vim.fn.has("linux") == 1
+end
+
 local function installPlugins(list)
 	local plugins = {}
 
@@ -11,29 +15,29 @@ local function installPlugins(list)
 	vim.pack.add(plugins)
 end
 
-installPlugins {
-	"catppuccin/nvim",
-	"stevearc/oil.nvim",
-	"nvim-mini/mini.icons",
-	"nvim-tree/nvim-web-devicons",
-	"vyfor/cord.nvim",
-	"nvim-mini/mini.pick",
-	"nvim-lualine/lualine.nvim",
-	"windwp/nvim-autopairs",
-	"lewis6991/gitsigns.nvim",
-	"folke/noice.nvim",
-	"MunifTanjim/nui.nvim",
-	"WhoIsSethDaniel/mason-tool-installer.nvim",
-	"mason-org/mason.nvim",
-	"stevearc/conform.nvim",
-	"saghen/blink.cmp",
-	"saghen/blink.lib",
-	"folke/lazydev.nvim",
-	"neovim/nvim-lspconfig",
-	"lopi-py/luau-lsp.nvim",
-	"b0o/SchemaStore.nvim",
-	"mfussenegger/nvim-lint",
-}
+if isNixos() == false then
+	installPlugins {
+		"catppuccin/nvim",
+		"stevearc/oil.nvim",
+		"nvim-mini/mini.icons",
+		"nvim-tree/nvim-web-devicons",
+		"vyfor/cord.nvim",
+		"nvim-mini/mini.pick",
+		"nvim-lualine/lualine.nvim",
+		"windwp/nvim-autopairs",
+		"lewis6991/gitsigns.nvim",
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		"mason-org/mason.nvim",
+		"stevearc/conform.nvim",
+		"saghen/blink.cmp",
+		"saghen/blink.lib",
+		"folke/lazydev.nvim",
+		"neovim/nvim-lspconfig",
+		"lopi-py/luau-lsp.nvim",
+		"b0o/SchemaStore.nvim",
+		"mfussenegger/nvim-lint",
+	}
+end
 
 require("plugins.catppuccin")
 require("plugins.oil")
@@ -41,7 +45,6 @@ require("plugins.cord")
 require("plugins.mini-pick")
 require("plugins.lualine")
 require("plugins.autopairs")
-require("plugins.noice")
 require("plugins.gitsigns")
 require("plugins.mason-tool-installer")
 require("plugins.conform")
