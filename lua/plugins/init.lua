@@ -36,6 +36,7 @@ if isNixos() == false then
 		"lopi-py/luau-lsp.nvim",
 		"b0o/SchemaStore.nvim",
 		"mfussenegger/nvim-lint",
+		"j-hui/fidget.nvim",
 	}
 
 	require("plugins.mason-tool-installer")
@@ -52,3 +53,4 @@ require("plugins.conform")
 require("plugins.blink-cmp")
 require("plugins.lint")
 require("plugins.mason") -- used as a catalog only while on NixOS
+require("plugins.fidget")
