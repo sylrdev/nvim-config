@@ -17,6 +17,6 @@ vim.diagnostic.config {
 		border = "rounded",
 	},
 	virtual_lines = {
-		current_line = true,
+		current_line = false,
 	},
 }
