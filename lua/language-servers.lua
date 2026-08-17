@@ -116,5 +116,6 @@ vim.lsp.config("jsonls", {
 vim.lsp.enable {
 	"lua_ls",
 	"jsonls",
+	"vtsls",
 	"taplo",
 }

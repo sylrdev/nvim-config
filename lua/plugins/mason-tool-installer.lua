@@ -7,6 +7,7 @@ require("mason-tool-installer").setup {
 		"luau-lsp",
 		"json-lsp",
 		"taplo",
+		"vtsls",
 
 		-- formatters
 		"stylua",
@@ -15,4 +16,5 @@ require("mason-tool-installer").setup {
 		-- linters
 		"selene",
 	},
+	auto_update = true,
 }
