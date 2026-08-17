@@ -1,4 +1,4 @@
-require("mason").setup()
+require("plugins.mason")
 
 require("mason-tool-installer").setup {
 	ensure_installed = {

@@ -37,6 +37,8 @@ if isNixos() == false then
 		"b0o/SchemaStore.nvim",
 		"mfussenegger/nvim-lint",
 	}
+
+	require("plugins.mason-tool-installer")
 end
 
 require("plugins.catppuccin")
@@ -46,7 +48,7 @@ require("plugins.mini-pick")
 require("plugins.lualine")
 require("plugins.autopairs")
 require("plugins.gitsigns")
-require("plugins.mason-tool-installer")
 require("plugins.conform")
 require("plugins.blink-cmp")
 require("plugins.lint")
+require("plugins.mason") -- used as a catalog only while on NixOS

@@ -1,17 +1,10 @@
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(event)
-		-- Create a helper function to set the buffer specific keymaps
 		local function map(mode, lhs, rhs)
 			vim.keymap.set(mode, lhs, rhs, { buffer = event.buf })
 		end
 
-		-- There are already some default keymaps provided by Neovim, see:
-		-- `:help lsp-defaults`
-		-- `:help diagnostics-defaults`
-
-		-- Go to definition
 		map("n", "gd", vim.lsp.buf.definition)
-		-- Go to declaration
 		map("n", "gD", vim.lsp.buf.declaration)
 
 		local client = vim.lsp.get_client_by_id(event.data.client_id)
@@ -55,6 +48,7 @@ vim.lsp.config("luau-lsp", {
 					stringRequires = {
 						enabled = true,
 					},
+					useConst = true,
 				},
 				showDeprecatedItems = false,
 			},
@@ -115,7 +109,11 @@ vim.lsp.config("jsonls", {
 -- other lsp
 vim.lsp.enable {
 	"lua_ls",
+	"nixd",
 	"jsonls",
-	"vtsls",
 	"taplo",
+	"html",
+	"cssls",
+	"ts_ls",
+	"eslint",
 }
