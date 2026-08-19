@@ -37,6 +37,7 @@ if isNixos() == false then
 		"b0o/SchemaStore.nvim",
 		"mfussenegger/nvim-lint",
 		"j-hui/fidget.nvim",
+		"rose-pine/neovim",
 	}
 
 	require("plugins.mason-tool-installer")
@@ -54,3 +55,4 @@ require("plugins.blink-cmp")
 require("plugins.lint")
 require("plugins.mason") -- used as a catalog only while on NixOS
 require("plugins.fidget")
+require("plugins.rose-pine")
