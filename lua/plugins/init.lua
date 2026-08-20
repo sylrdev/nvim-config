@@ -15,10 +15,21 @@ local function installPlugins(list)
 	vim.pack.add(plugins)
 end
 
+local function deletePlugins()
+	local plugins = vim.pack.get()
+	local pluginNames = {}
+
+	for _, value in ipairs(plugins) do
+		table.insert(pluginNames, value.spec.name)
+	end
+
+	vim.pack.del(pluginNames)
+end
+
 if isNixos() == false then
+	-- deletePlugins()
 	installPlugins {
 		"catppuccin/nvim",
-		"stevearc/oil.nvim",
 		"nvim-mini/mini.icons",
 		"nvim-tree/nvim-web-devicons",
 		"vyfor/cord.nvim",
@@ -37,14 +48,13 @@ if isNixos() == false then
 		"b0o/SchemaStore.nvim",
 		"mfussenegger/nvim-lint",
 		"j-hui/fidget.nvim",
-		"rose-pine/neovim",
+		"nvim-tree/nvim-tree.lua",
 	}
 
 	require("plugins.mason-tool-installer")
 end
 
 require("plugins.catppuccin")
-require("plugins.oil")
 require("plugins.cord")
 require("plugins.mini-pick")
 require("plugins.lualine")
@@ -55,4 +65,4 @@ require("plugins.blink-cmp")
 require("plugins.lint")
 require("plugins.mason") -- used as a catalog only while on NixOS
 require("plugins.fidget")
-require("plugins.rose-pine")
+require("plugins.nvim-tree")

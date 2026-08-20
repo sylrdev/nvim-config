@@ -48,7 +48,7 @@ vim.lsp.config("luau-lsp", {
 					stringRequires = {
 						enabled = true,
 					},
-					useConst = true,
+					useConst = false,
 				},
 				showDeprecatedItems = false,
 			},
