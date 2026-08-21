@@ -49,6 +49,7 @@ if isNixos() == false then
 		"mfussenegger/nvim-lint",
 		"j-hui/fidget.nvim",
 		"nvim-tree/nvim-tree.lua",
+		"nvim-treesitter/nvim-treesitter",
 	}
 
 	require("plugins.mason-tool-installer")
@@ -66,3 +67,4 @@ require("plugins.lint")
 require("plugins.mason") -- used as a catalog only while on NixOS
 require("plugins.fidget")
 require("plugins.nvim-tree")
+require("plugins.nvim-treesitter")
